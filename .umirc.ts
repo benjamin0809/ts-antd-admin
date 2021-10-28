@@ -16,6 +16,9 @@ export default {
     themes: resolve(__dirname, './src/themes'),
     utils: resolve(__dirname, './src/utils'),
   },
+  icons: {
+    entry: './src/assets/svg',
+  },
   antd: {},
   // a lower cost way to genereate sourcemap, default is cheap-module-source-map, could save 60% time in dev hotload
   devtool: 'source-map',
