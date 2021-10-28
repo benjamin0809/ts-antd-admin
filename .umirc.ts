@@ -18,7 +18,7 @@ export default {
   },
   antd: {},
   // a lower cost way to genereate sourcemap, default is cheap-module-source-map, could save 60% time in dev hotload
-  devtool: 'eval',
+  devtool: 'source-map',
   dva: { immer: true },
   dynamicImport: {
     loading: 'components/Loader/Loader',
@@ -33,15 +33,15 @@ export default {
       },
       'lodash',
     ],
-    [
-      'import',
-      {
-        libraryName: '@ant-design/icons',
-        libraryDirectory: 'es/icons',
-        camel2DashComponentName: false,
-      },
-      'ant-design-icons',
-    ],
+    // [
+    //   'import',
+    //   {
+    //     libraryName: '@ant-design/icons',
+    //     libraryDirectory: 'es/icons',
+    //     camel2DashComponentName: false,
+    //   },
+    //   'ant-design-icons',
+    // ],
     [
       'macros'
     ]
